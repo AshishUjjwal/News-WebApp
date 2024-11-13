@@ -13,7 +13,7 @@
 ## Installation
 
 ```
-git clone https://github.com/Anubhav-dev-web/newsapp.git)
+git clone https://github.com/AshishUjjwal/News-WebApp.git
 
 cd newsapp
 

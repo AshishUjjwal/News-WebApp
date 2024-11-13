@@ -4,13 +4,14 @@ import React, { Component } from 'react'
 import Navbar from './components/Navbar.js';
 import News from './components/News.js';
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
 
 // class component got using  a snippet  
 // "rcep" ==> (react class component with props)
+
 
 export default class App extends Component {
   pageSize = 6
@@ -26,7 +27,7 @@ export default class App extends Component {
   render() {
     return (
       <div style={{ backgroundColor: "#f7faf7", overflow: "hidden" }} >
-        <BrowserRouter>
+        <HashRouter>
           <Navbar />
           <LoadingBar
             color='#f11946'
@@ -44,7 +45,7 @@ export default class App extends Component {
             <Route exact path="/Technology" element={<News setProgress={this.setProgress} apiKey={this.apiKey} key='Technology' pageSize={this.pageSize} country='us' category='Technology' />}></Route>
 
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </div>
 
     )

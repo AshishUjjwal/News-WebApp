@@ -139,7 +139,7 @@ export class News extends Component {
                 <h1 className="text-center mt-4 mb-5" >LightBringer-Top {this.capitalizeFirstLetter(this.props.category)} headlines  </h1>
                 {this.state.loading && <Spinner />}
                 <InfiniteScroll
-                    dataLength={this.state.articles.length}
+                    dataLength={this.state.articles?.length}
                     next={this.fetchMoreData}
                     hasMore={this.state.articles.length !== this.state.totalResults}
                     loader={this.state.loading && <Spinner />}

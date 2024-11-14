@@ -3,11 +3,8 @@ import LoadingBar from 'react-top-loading-bar'
 import React, { Component } from 'react'
 import Navbar from './components/Navbar.js';
 import News from './components/News.js';
-import {
-  HashRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { HashRouter , Routes, Route } from "react-router-dom";
+
 
 // class component got using  a snippet  
 // "rcep" ==> (react class component with props)
@@ -15,7 +12,7 @@ import {
 
 export default class App extends Component {
   pageSize = 6
-  apiKey = process.env.REACT_APP_NEWS_API || 'cd22bc80fb49415a8ffb17940b502bc3'  //hiding my api key getting through enviornment variable in .env file
+  apiKey = process.env.REACT_APP_NEWS_API  //hiding my api key getting through enviornment variable in .env file
   state = {
     progress: 0
   }
